@@ -11,12 +11,13 @@
  const express = require('express');
  const router = express.Router();
  const auth = require('../middleware/basic.js');
+ const bearerMiddleware = require('../middleware/bearer.js');
  const UserModel = require('../lib/models/users/users-model.js');
  const User = new UserModel();
 
  router.post('/signup', signUp);
  router.post('/signin', auth, signIn);
- router.get('/users', getUsers);
+ router.get('/users', bearerMiddleware, getUsers);
 
 /**
  * signUp - adds a user 

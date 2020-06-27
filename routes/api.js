@@ -10,17 +10,18 @@
 
 const express = require('express');
 const router = express.Router();
-
+const bearerMiddleware = require('../middleware/bearer.js');
+const permissions = require('../middleware/authorize.js');
 const getModel = require('../middleware/getModel.js');
 
 
 router.param('model', getModel);
 
-router.post('/:model', addOne);
-router.get('/:model', getAll);
-router.get('/:model/:id', getOne);
-router.put('/:model/:id', updateOne);
-router.delete('/:model/:id', deleteOne);
+router.post('/:model', bearerMiddleware, permissions('create'), addOne);
+router.get('/:model', bearerMiddleware, getAll);
+router.get('/:model/:id', bearerMiddleware, getOne);
+router.put('/:model/:id', bearerMiddleware, permissions('update'), updateOne);
+router.delete('/:model/:id', bearerMiddleware, permissions('delete'), deleteOne);
 
 /**
  * addOne - adds one thing to the database
