@@ -1,6 +1,6 @@
 'use strict';
 
-//Module that contains the routes and the callback functions for the routes.
+//Module that contains the API routes and the callback functions for the routes.
 
 
 /**
