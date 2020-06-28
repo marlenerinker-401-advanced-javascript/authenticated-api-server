@@ -8,7 +8,7 @@ This project contains an authenticated API server.
 - [Submission PR](https://github.com/marlenerinker-401-advanced-javascript/authenticated-api-server/pull/1)
 - [Tests Report](https://github.com/marlenerinker-401-advanced-javascript/authenticated-api-server/actions)
 - [Swagger Hub](https://app.swaggerhub.com/apis/marlene-rinker/auth-api-server/0.1)
-<!-- - [Heroku deployment](https://app-server-mr401.herokuapp.com/) -->
+- [Heroku deployment](https://auth-api-server-mr401.herokuapp.com/)
 
 
 
