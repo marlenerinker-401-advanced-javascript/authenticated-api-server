@@ -50,14 +50,14 @@ describe('testing sign up', () => {
 
 describe('testing get users', () => {
 
-
   it('should return users', (done) => {
     
-    let user = { username: "test2", password: "testing" }
+    let user = { username: "test2", password: "testing", role: "admin" };
     return mockRequest.post('/signup')
     .send(user)
     .then(results => {
-      return mockRequest.get('/users');
+      let token = results.headers.token;
+      return mockRequest.get('/users').set('Authorization', `bearer ${token}`);
     })
     .then(results => {
       expect(results.body.count).toBe(2);
