@@ -15,25 +15,34 @@ This project contains an authenticated API server.
 ### Setup
 
 #### `.env` requirements
-PORT=<port> (will default to 3000 if you don't specify here)
+PORT= `<port>` (will default to 3000 if you don't specify here)
 
-MONGODB_ATLAS_URI=<route to mongo>
+MONGODB_ATLAS_URI = `<route to mongo>`
 
-SECRET = <secret-string>
-TOKEN_EXPIRATION = <when token should expire, for example: 1d>
+SECRET = `<secret-string>`
+
+TOKEN_EXPIRATION = `<when token should expire, for example: 1d>`
 
 #### Packages to Install
 (see package.json)
 
 dotenv
+
 express
+
 mongoose
+
 bcrypt
+
 cors
+
 jsonwebtoken
 
+
 For testing:
+
 jest
+
 cf-supergoose
 
 

@@ -18,21 +18,6 @@ afterAll(() => {
   supergoose.stopDB();
 })
 
-async function getAdminToken() {
-  let user = { username: "admin user", password: "testing", role: "admin" };
-  let token = null;
-    await mockRequest.post('/signup').send(user)
-    .then(results => {
-      console.log(results);
-      token = results.headers.token;
-      console.log('token in function: ', token);
-    })
-   return token;
-};
- 
-// let token = getAdminToken();
-// console.log('token: ', token);
-
 
 // tests to create
 
