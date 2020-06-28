@@ -24,7 +24,7 @@
  * @function signUp
  * @param {*} request 
  * @param {*} response 
- * @returns {token}
+ * @returns {string} 
  */
 
  async function signUp(request, response){
@@ -51,7 +51,7 @@
  * @function signIn
  * @param {*} request 
  * @param {*} response 
- * @returns {token, user}
+ * @returns {(string|object)}
  */
 
  async function signIn(request, response){
