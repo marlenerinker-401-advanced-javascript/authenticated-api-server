@@ -5,10 +5,10 @@ This project contains an authenticated API server.
 
 ### Author: Marlene Rinker
 
-- [Submission PR](https://github.com/marlenerinker-401-advanced-javascript/api-server/pull/11)
-- [Tests Report](https://github.com/marlenerinker-401-advanced-javascript/api-server/actions)
+- [Submission PR](https://github.com/marlenerinker-401-advanced-javascript/authenticated-api-server/pull/1)
+- [Tests Report](https://github.com/marlenerinker-401-advanced-javascript/authenticated-api-server/actions)
 - [Swagger Hub](https://app.swaggerhub.com/apis/marlene-rinker/auth-api-server/0.1)
-- [Heroku deployment](https://app-server-mr401.herokuapp.com/)
+<!-- - [Heroku deployment](https://app-server-mr401.herokuapp.com/) -->
 
 
 
@@ -96,12 +96,5 @@ nodemon index.js
 
 
 #### UML
-![UML Diagram](api-server-whiteboard.jpg)
+![UML Diagram](auth-api-server-whiteboard.jpg)
 
-#### Citations
-
-Ashley Biermann helped me with middleware testing.
-
-Paul Depew pointed me in the right direction with some of router functions. He also helped me format the date in my timestamp.
-
-Used the Express.js docs for reference on the timestamp functionality.
